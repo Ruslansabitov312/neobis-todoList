@@ -1,0 +1,36 @@
+.header
+  padding: 2rem 1rem
+  max-width: 800px
+  width: 100%
+  margin: 0 auto
+  &__title
+    font-size: 2.5rem
+    font-weight: 300
+    color: $gray
+    margin-bottom: 1rem
+  &__new-todo-form
+    display: flex
+  &__new-todo-input
+    flex: 1 1 0%
+    background-color: $darker
+    padding: 1rem
+    border-radius: 1rem
+    margin-right: 1rem
+    color: $light
+    font-size: 1.25rem
+    &::placeholder
+      color: $gray
+  &__new-todo-submit
+    color: $pink
+    font-size: 1.25rem
+    font-weight: 700
+    background-image: linear-gradient(to right, $pink, $purple)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    cursor: pointer
+    // text-transform: uppercase
+    transition: 0.4s
+    &:hover
+      opacity: 0.8
+    &:active
+      opacity: 0.6

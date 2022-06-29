@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO List</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">TODOS</h1>
+    <form class="header__new-todo-form">
+      <input
+        type="text"
+        class="header__new-todo-input"
+        placeholder="Enter your todo"
+      />
+      <input
+        type="submit"
+        class="header__new-todo-submit"
+        value="Add Task"
+      />
+    </form>
+  </header>
+
+  <main class="main">
+    <section class="todo-list">
+      <h2 class="todo-list__title">Tasks:</h2>
+      <div class="todo-list__tasks">
+
+        <div class="todo-list__task">
+          <div class="todo-list__content">
+            <input 
+              type="text"
+              class="todo-list__text"
+              value="Hello world!"
+              readonly="readonly"
+            />
+          </div>
+          <div class="todo-list__actions">
+            <button class="todo-list__edit-btn">Edit</button>
+            <button class="todo-list__delete-btn">Delete</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>
