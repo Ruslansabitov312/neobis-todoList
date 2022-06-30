@@ -18,6 +18,9 @@
     padding: 1rem
     border-radius: 1rem
     margin-bottom: 1rem
+  &__task_completed
+    background-color: $inactive
+    opacity: 0.5
   &__content
     flex: 1 1 0%
   &__text
@@ -28,6 +31,9 @@
     transition: 0.4s
     &:not(:read-only)
       color: $pink
+  &__text_completed
+    color: $gray
+    text-decoration: line-through
   &__actions
     display: flex
     margin: 0 -0.5rem
@@ -42,6 +48,8 @@
         opacity: 0.8
       &:active
         opacity: 0.6
+  &__done-btn
+    color: $green
   &__edit-btn
     background-image: linear-gradient(to right, $pink, $purple)
     -webkit-background-clip: text
